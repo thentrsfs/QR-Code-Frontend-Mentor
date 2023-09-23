@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Outfit&family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grey);
+    font-size: 15px;
+
+}
+
+.attribution {
+    text-align: center;
+    width: 400px;
+    background-color: var(--white);
+    margin-bottom: 40px;
+    padding: 20px 20px 40px;
+    border-radius: 5%;
+}
+
+.attribution img {
+    width: 350px;
+    border-radius: 5%;
+    margin-bottom: 30px;
+}
+
+.attribution h1 {
+    margin-bottom: 30px;
+}
+
+.attribution p {
+    font-size: 16px;
+    margin-inline: 20px;
+    color: var(--grayish-blue);
+}
+
+@media only screen and (max-width: 600px) {
+    .attribution {
+        width: min(100% - 3rem, 40ch);
+    }
+
+    .attribution img {
+        width: 100%;
+    }
+}
